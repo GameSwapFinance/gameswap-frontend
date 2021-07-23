@@ -58,7 +58,26 @@ const pools: PoolConfig[] = [
     isFinished: false,
     tokenDecimals: 18,
     message: '7 Day 850 MATIC Pool'
-  }, 
+  }, // 17192716 0x63E40FBe7D0Eb69a951447716F6540c498443074
+  {
+    sousId: 5,
+    tokenName: 'STONKZ',
+    stakingTokenName: QuoteToken.STONKZ,
+    stakingTokenAddress: '0x1F1b5ce5fEDb6F27Db51C4d5e885d952f8371257',
+    contractAddress: {
+      97: '',
+      56: '',
+     137: '0x402297e077dF376F5055B958dd5DBca65F28d604'
+    },
+    poolCategory: PoolCategory.COMMUNITY,
+    projectLink: 'https://stonkz.farm/',
+    harvest: true,
+    tokenPerBlock: '.0004',
+    sortOrder: 2,
+    isFinished: false,
+    tokenDecimals: 18,
+    message: '2 Day STONK SHARE Pool'
+  },
 ]
 
 export default pools
