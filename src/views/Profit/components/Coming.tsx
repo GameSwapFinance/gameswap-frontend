@@ -37,16 +37,19 @@ const Coming: React.FC = () => {
   return (
     <Card>
       <div style={{ padding: '24px' }}>
-        <CardTitle>Matic Dividends</CardTitle>
-        <Image src="/images/tokens/matic.png" width={64} height={64} alt="Dividends" />
+        <CardTitle>Next Flash Pool</CardTitle>
+
         <br />
-        <Label>Distributes fee income back to STONKS holders</Label>
-        <Button variant="subtle" fullWidth mb="16px">
-          <span style={{fontSize: 'x-large'}}>$10,000+</span> of Matic Dividends
+        <Label>7 day non-native token staking</Label>
+        <Button variant="subtle" fullWidth mb="16px" onClick={(e) => {
+          e.preventDefault();
+          window.location.href = 'https://snapshot.org/#/game-swap.eth';
+        }}>
+          <span style={{ fontSize: 'x-large' }}>Vote Here</span>
         </Button>
       </div>
       <Footer>
-      <div style={{ flex: 1 }}> Let us know what <b>DIVIDEND</b> you would like to see next!</div>
+        <div style={{ flex: 1 }}> Let us know what <b>FLASH</b> pools you would like to see next!</div>
       </Footer>
     </Card>
   )
