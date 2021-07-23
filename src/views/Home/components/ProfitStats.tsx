@@ -28,7 +28,7 @@ const ProfitStats = () => {
   const burnedBalance = useBurnedBalance(getCakeAddress())
   const farms = useFarms()
   const block = useBlock()
-  const startBlock = 16868421
+  const startBlock = 17257000
 
   let eggPerBlock = 0
   if (farms && farms[0] && farms[0].eggPerBlock) {
@@ -36,7 +36,7 @@ const ProfitStats = () => {
   }
 
   // get total seconds between the times
-  let delta = (startBlock- block) * 2.2;
+  let delta = (startBlock- block) * 2.5;
 
   // calculate (and subtract) whole days
     const days = Math.floor(delta / 86400);
@@ -55,10 +55,10 @@ const ProfitStats = () => {
 
   let message = ""
   if (block < startBlock){
-    message = `Next Dividend Pool Begins in ${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds`;
+    message = `Stonk Share Farming Begins in ${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds`;
   }
   else if (block < startBlock + (12 * 60 * 60 / 2.25)){
-    message = "Dividend Pool is LIVE!";
+    message = "Stonk Share Farming is LIVE!";
   }
  
   return (

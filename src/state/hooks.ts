@@ -113,7 +113,7 @@ export const useTotalValue = (): BigNumber => {
   }
 
   // Calculate value for pools
-  const pools = useSelector((state: State) => state.pools.data)
+  /* const pools = useSelector((state: State) => state.pools.data)
   for (let i = 0; i < pools.length; i++) {
     const pool = pools[i]
     const totalStakedInPool = new BigNumber(pool.totalStaked)
@@ -123,6 +123,6 @@ export const useTotalValue = (): BigNumber => {
     } else if (pool.sousId === 3) {
       value = value.plus(totalStakedInPool.div(new BigNumber(10).pow(18)).multipliedBy(cakePrice))
     }
-  }
+  } */
   return value
 }
