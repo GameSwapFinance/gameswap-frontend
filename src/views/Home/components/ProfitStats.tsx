@@ -27,7 +27,7 @@ const ProfitStats = () => {
   const burnedBalance = useBurnedBalance(getCakeAddress())
   const farms = useFarms()
   const block = useBlock()
-  const startBlock = 16868421
+  const startBlock = 17194555
 
   let eggPerBlock = 0
   if (farms && farms[0] && farms[0].eggPerBlock) {
@@ -54,10 +54,10 @@ const ProfitStats = () => {
 
   let message = ""
   if (block < startBlock){
-    message = `Next Dividend Pool Begins in ${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds`;
+    message = `Stonk Share Token Dividend Pool Begins in ${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds`;
   }
   else if (block < startBlock + (12 * 60 * 60 / 2.25)){
-    message = "Dividend Pool is LIVE!";
+    message = "StonkShare Token is live at Https://shares.stonk.farm!";
   }
  
   return (
