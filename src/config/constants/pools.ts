@@ -61,7 +61,7 @@ const pools: PoolConfig[] = [
   }, // 17192716 0x63E40FBe7D0Eb69a951447716F6540c498443074
   {
     sousId: 5,
-    tokenName: 'STONKZ',
+    tokenName: 'STONKS',
     stakingTokenName: QuoteToken.STONKZ,
     stakingTokenAddress: '0x1F1b5ce5fEDb6F27Db51C4d5e885d952f8371257',
     contractAddress: {

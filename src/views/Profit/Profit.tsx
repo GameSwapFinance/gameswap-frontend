@@ -67,7 +67,7 @@ const Farm: React.FC = () => {
       totalRewardPricePerYear = new BigNumber( 50 * 200 / 3 * 365) // @HACK hard code value for now rewardTokenPriceInBNB.times(pool.tokenPerBlock).times(BLOCKS_PER_YEAR)
     }
     else if (pool.sousId === 5){
-      totalRewardPricePerYear = new BigNumber( 25 * 40 / 2 * 365) // @HACK hard code value for now rewardTokenPriceInBNB.times(pool.tokenPerBlock).times(BLOCKS_PER_YEAR)
+      totalRewardPricePerYear = new BigNumber( 25 * 140 / 2 * 365) // @HACK hard code value for now rewardTokenPriceInBNB.times(pool.tokenPerBlock).times(BLOCKS_PER_YEAR)
     }
     else{ // works for WMATIC
       totalRewardPricePerYear = new BigNumber(tokensPerYear).multipliedBy(bnbPriceUSD);
