@@ -24,6 +24,7 @@ export enum QuoteToken {
   'CAKE' = 'CAKE',
   'SYRUP' = 'SYRUP',
   'BUSD' = 'BUSD',
+  'USDC' = 'USDC',
   'TWT' = 'TWT',
   'UST' = 'UST',
   'WBTC' = 'WBTC',

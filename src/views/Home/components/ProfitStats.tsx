@@ -28,7 +28,7 @@ const ProfitStats = () => {
   const burnedBalance = useBurnedBalance(getCakeAddress())
   const farms = useFarms()
   const block = useBlock()
-  const startBlock = 17257000
+  const startBlock = 17425500
 
   let eggPerBlock = 0
   if (farms && farms[0] && farms[0].eggPerBlock) {
@@ -55,10 +55,10 @@ const ProfitStats = () => {
 
   let message = ""
   if (block < startBlock){
-    message = `Stonk Share Farming Begins in ${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds`;
+    message = `Flash Pool Staking Begins in ${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds`;
   }
   else if (block < startBlock + (12 * 60 * 60 / 2.25)){
-    message = "Stonk Share Farming is LIVE!";
+    message = "Flash Pool Staking is LIVE!";
   }
  
   return (

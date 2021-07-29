@@ -119,6 +119,15 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
   const needsApproval = !accountHasStakedBalance && !allowance.toNumber() && !isBnbPool
   const isCardActive = isFinished && accountHasStakedBalance
 
+  // @hack
+  // console.log(`Pool1 ${pool.stakingTokenName}`)
+  // console.log(`Pool1 ${pool.stakingTokenName} | TotalSTacked1 ${totalStaked.toNumber()}`)
+  let realTotalStaked = totalStaked
+  if(totalStaked && pool.sousId === 2){
+    // console.log(totalStaked)
+    realTotalStaked = new BigNumber(totalStaked).multipliedBy(new BigNumber(10).pow(12))
+  }
+
   const convertedLimit = new BigNumber(stakingLimit).multipliedBy(new BigNumber(10).pow(tokenDecimals))
   const [onPresentDeposit] = useModal(
     <DepositModal
@@ -262,7 +271,7 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
       </div>
       <CardFooter
         projectLink={projectLink}
-        totalStaked={totalStaked}
+        totalStaked={realTotalStaked}
         blocksRemaining={blocksRemaining}
         isFinished={isFinished}
         blocksUntilStart={blocksUntilStart}
