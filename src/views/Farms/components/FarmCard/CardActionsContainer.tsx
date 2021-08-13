@@ -63,7 +63,7 @@ const CardActions: React.FC<FarmCardActionsProps> = ({ farm, ethereum, account }
       <StakeAction
         stakedBalance={stakedBalance}
         tokenBalance={tokenBalance}
-        tokenName={lpName}
+        tokenName={farm.isTokenOnly ? farm.tokenSymbol :lpName}
         pid={pid}
         depositFeeBP={depositFeeBP}
       />

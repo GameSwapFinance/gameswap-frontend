@@ -13,6 +13,7 @@ import { useFarms, usePriceCakeBusd } from '../../../state/hooks'
 const StyledCakeStats = styled(Card)`
   margin-left: auto;
   margin-right: auto;
+  width: 500px;
 `
 
 const Row = styled.div`
@@ -27,7 +28,7 @@ const ProfitStats = () => {
   const burnedBalance = useBurnedBalance(getCakeAddress())
   const farms = useFarms()
   const block = useBlock()
-  const startBlock = 16150000
+  const startBlock = 18006684
 
   let eggPerBlock = 0
   if (farms && farms[0] && farms[0].eggPerBlock) {
@@ -35,7 +36,7 @@ const ProfitStats = () => {
   }
 
   // get total seconds between the times
-  let delta = (startBlock- block) * 2;
+  let delta = (startBlock- block) * 2.5;
 
   // calculate (and subtract) whole days
     const days = Math.floor(delta / 86400);
@@ -50,11 +51,19 @@ const ProfitStats = () => {
   delta -= minutes * 60;
 
   // what's left is seconds
-  const seconds = delta % 60;
+  const seconds = Math.round(delta % 60);
 
+  let message = ""
+  if (block < startBlock){
+    message = `Corn farming begins in ${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds`;
+  }
+  else if (block < startBlock + (12 * 60 * 60 / 2.25)){
+    message = "Corn farming is LIVE!";
+  }
+ 
   return (
     <Heading as="h2" color="secondary" mb="50px" style={{ textAlign: 'center' }}>
-    Corn Farming Starts in{days} Days {hours} Hours {minutes} Minutes {seconds} Seconds
+    {message}
   </Heading>
   )
 }

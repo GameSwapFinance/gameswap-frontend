@@ -87,19 +87,14 @@ const Farm: React.FC = () => {
 
   return (
     <Page>
-      <Hero>
         <div>
-          <Heading as="h1" size="xxl" mb="16px">
-            {TranslateString(282, 'Dividend Pool')}
-          </Heading>
-          <ul>
-            <li>Stake CORN to earn dividend payouts.</li>
-            <li>You can unstake at any time.</li>
-            <li>New dividend pools added every week.</li>
-          </ul>
+        <Heading as="h1" size="lg" color="primary" mb="50px" style={{ textAlign: 'center' }}>
+        Stake CORN to Earn Divident Payouts
+      </Heading>
+      <Heading as="h2" color="secondary" mb="50px" style={{ textAlign: 'center' }}>
+        {TranslateString(10000, 'Dividends paid out in Matic from Deposit Fees')}
+      </Heading>
         </div>
-        <img src="/images/syrup.png" alt="SYRUP POOL icon" width={410} height={191} />
-      </Hero>
       <br />
 
       <PoolTabButtons />

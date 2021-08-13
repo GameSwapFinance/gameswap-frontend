@@ -27,13 +27,8 @@ const config: MenuEntry[] = [
   //   href: '/pools',
   // },
   {
-    label: 'Earn Dividends',
+    label: 'Corn Dividends',
     icon: 'TicketIcon',
-    href: '/profit',
-  },
-  {
-    label: 'STONKMOON (Coming Soon)',
-    icon: 'SunIcon',
     href: '/profit',
   },
   // {
@@ -52,15 +47,15 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Corn Chart',
-        href: 'https://app.polychart.io/explorer/polygon/0x21401c19cbe557f1265401bda65bc523ce509db2'
+        href: 'https://polygon.poocoin.app/tokens/0xaed7feef34a836a5755f1c0c6ccd9968df2d422a'
       },
       {
-        label: 'Github',
-        href: 'https://github.com/gameswapfinance/',
+        label: 'Contracts',
+        href: 'https://gameswapfinance.gitbook.io/poly-unicorn/security/contracts',
       },
       {
         label: 'Docs',
-        href: 'https://gameswapfinance.gitbook.io/gameswap/',
+        href: 'https://gameswapfinance.gitbook.io/poly-unicorn/',
       },
       {
         label: 'Medium',
@@ -69,24 +64,10 @@ const config: MenuEntry[] = [
     ],
   },
   {
-    label: 'Rug Doc Security Review',
+    label: 'Rug Doc Security Review (Coming Soon)',
     icon: 'AuditIcon',
     href: 'https://rugdoc.io/project/corn-farm/',
   }, 
-  {
-    label: 'Previous Farms',
-    icon: 'FarmIcon',
-    items: [
-      {
-        label: 'STONK',
-        href: 'https://www.gameswapfinance.com',
-      },
-      {
-        label: 'STONKX',
-        href: 'https://stonk.farm',
-      }
-    ],
-  },
 ]
 
 export default config
