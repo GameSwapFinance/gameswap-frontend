@@ -1,64 +1,25 @@
 import { PoolConfig, QuoteToken, PoolCategory } from './types'
 
 const pools: PoolConfig[] = [
-  {
+  /* {
     sousId: 2,
     tokenName: 'WMATIC',
-    stakingTokenName: QuoteToken.STONKY,
-    stakingTokenAddress: '0xcac723F6C79Ce761E04682009Fa87c39Ba05b75c',
+    stakingTokenName: QuoteToken.Y,
+    stakingTokenAddress: '0xAed7fEEf34a836A5755f1C0C6CCD9968Df2d422a',
     contractAddress: {
       97: '',
       56: '',
      137: '0x65B97c51634d49e57B7893E3142f02eB51d8125B'
     },
     poolCategory: PoolCategory.COMMUNITY,
-    projectLink: 'https://stonky.farm/',
+    projectLink: 'https://corn.farm/',
     harvest: true,
     tokenPerBlock: '.02892',
     sortOrder: 1,
     isFinished: false,
     tokenDecimals: 18,
     message: '3 Day 3,570 MATIC Pool'
-  },
-  {
-    sousId: 3,
-    tokenName: 'StonkZ',
-    stakingTokenName: QuoteToken.STONKY,
-    stakingTokenAddress: '0xcac723F6C79Ce761E04682009Fa87c39Ba05b75c',
-    contractAddress: {
-      97: '',
-      56: '',
-     137: '0xb1FcAC4Ba7497e1314dD76eA590B96039df1D359'
-    },
-    poolCategory: PoolCategory.COMMUNITY,
-    projectLink: 'https://stonky.farm/',
-    harvest: true,
-    tokenPerBlock: '.000403',
-    sortOrder: 1,
-    isFinished: false,
-    tokenDecimals: 18,
-    message: '3 Day StonkZ Pool'
-  },
-  {
-    sousId: 4,
-    tokenName: 'WMATIC',
-    stakingTokenName: QuoteToken.STONKY,
-    stakingTokenAddress: '0xcac723F6C79Ce761E04682009Fa87c39Ba05b75c',
-    contractAddress: {
-      97: '',
-      56: '',
-     137: '0xe1737BEa26035984404Eb9cc26f0246d17DD2E45'
-    },
-    poolCategory: PoolCategory.COMMUNITY,
-    projectLink: 'https://stonky.farm/',
-    harvest: true,
-    tokenPerBlock: '.00241935',
-    sortOrder: 1,
-    isFinished: false,
-    tokenDecimals: 18,
-    message: '3 Day 300 WMATIC Pool'
-  },
-  // 0xe1737BEa26035984404Eb9cc26f0246d17DD2E45
+  }, */ 
 ]
 
 export default pools

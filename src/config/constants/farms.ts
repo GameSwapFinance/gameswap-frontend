@@ -2,107 +2,111 @@ import contracts from './contracts'
 import { FarmConfig, QuoteToken } from './types'
 
 const farms: FarmConfig[] = [
-  // await CreatePool('0xcac723F6C79Ce761E04682009Fa87c39Ba05b75c', 50, 0, 7200) // 0 Stonky token 50 aloc, no fee, 2 hour harvest delay
+  // await CreatePool('0xAed7fEEf34a836A5755f1C0C6CCD9968Df2d422a', 500, 0); // Native token
   {
     pid: 0,
     risk: 5,
     isTokenOnly: true,
-    lpSymbol: 'STONKY',
+    lpSymbol: 'CORN-USDC',
     lpAddresses: {
       97: '',
       56: '',
-      137: '0x656DD8094106805888dc3E7b4E3fb9061D0DC001', // STONKY - USDC
+      137: '0x0f854bb0f5c0f56b8ef792ee8e10ca429b1f7d2e', // CORN-USDC
     },
-    tokenSymbol: 'STONKY',
+    tokenSymbol: 'CORN',
     tokenAddresses: {
       97: '',
       56: '',
-      137: '0xcac723F6C79Ce761E04682009Fa87c39Ba05b75c',
+      137: '0xAed7fEEf34a836A5755f1C0C6CCD9968Df2d422a',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
   },
-  // await CreatePool('0x656DD8094106805888dc3E7b4E3fb9061D0DC001', 100, 4, 7200) // 1 Stonky-USDC 100 aloc, 4% fee, 2 hour harvest delay
+  // await CreatePool('0x0f854bb0f5c0f56b8ef792ee8e10ca429b1f7d2e', 1000, 0); // Native lp
   {
     pid: 1,
-    risk: 3,
-    lpSymbol: 'STONKY-USDC',
+    risk: 5,
+    isTokenOnly: false,
+    lpSymbol: 'CORN-USDC',
     lpAddresses: {
       97: '',
       56: '',
-      137: '0x656DD8094106805888dc3E7b4E3fb9061D0DC001', // Stonky - USDC
+      137: '0x0f854bb0f5c0f56b8ef792ee8e10ca429b1f7d2e', // CORN-USDC
     },
-    tokenSymbol: 'STONKY',
+    tokenSymbol: 'CORN',
     tokenAddresses: {
       97: '',
       56: '',
-      137: '0xcac723F6C79Ce761E04682009Fa87c39Ba05b75c', // STONKY
+      137: '0xAed7fEEf34a836A5755f1C0C6CCD9968Df2d422a',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
   },
-  // await CreatePool('0x21401C19cBE557f1265401BDA65bC523CE509db2', 100, 4, 7200) // 2 Stonky-WMatic 100 aloc, 4% fee, 2 hour harvest delay 
+  // await CreatePool('0x7ceb23fd6bc0add59e62ac25578270cff1b9f619', 50, 4); // WETH 
   {
     pid: 2,
-    risk: 3,
-    lpSymbol: 'STONKY-WMATIC',
+    risk: 5,
+    isTokenOnly: true,
+    lpSymbol: 'WETH-USDC',
     lpAddresses: {
       97: '',
       56: '',
-      137: '0x21401C19cBE557f1265401BDA65bC523CE509db2', // Stonky - WMATIC
+      137: '0x853ee4b2a13f8a742d64c8f088be7ba2131f670d', // 
     },
-    tokenSymbol: 'STONKY',
+    tokenSymbol: 'WETH',
     tokenAddresses: {
       97: '',
       56: '',
-      137: '0xcac723F6C79Ce761E04682009Fa87c39Ba05b75c', // STONKY
+      137: '0x7ceb23fd6bc0add59e62ac25578270cff1b9f619',
     },
-    quoteTokenSymbol: QuoteToken.CAKE,
-    quoteTokenAdresses: contracts.cake,
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
   },
-  // await CreatePool('0xd5069FbeCBE6b535341c45D57E609A02C80f13D6', 100, 4, 7200) // 3 Stonky-WETH 100 aloc, 4% fee, 2 hour harvest delay
+  // await CreatePool('0x2791bca1f2de4661ed88a30c99a7a9449aa84174', 50, 4); // USDC 
   {
     pid: 3,
-    risk: 3,
-    lpSymbol: 'STONKY-WETH',
+    risk: 1,
+    isTokenOnly: true,
+    lpSymbol: 'USDC-USDT',
     lpAddresses: {
       97: '',
       56: '',
-      137: '0xd5069FbeCBE6b535341c45D57E609A02C80f13D6', // Stonky - WETH
+      137: '0x2cf7252e74036d1da831d11089d326296e64a728', // 
     },
-    tokenSymbol: 'STONKY',
+    tokenSymbol: 'USDC',
     tokenAddresses: {
       97: '',
       56: '',
-      137: '0xcac723F6C79Ce761E04682009Fa87c39Ba05b75c', // STONKY
+      137: '0x2791bca1f2de4661ed88a30c99a7a9449aa84174',
     },
-    quoteTokenSymbol: QuoteToken.CAKE,
-    quoteTokenAdresses: contracts.cake,
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
   },
-  // await CreatePool('0x797eF3827Ef8bAA7B72b596E126FD1b31003055C', 100, 4, 7200) // 4 Stonky-WBTC 100 aloc, 4% fee, 2 hour harvest delay
+  // await CreatePool('0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270', 50, 4); // Wmatic
   {
     pid: 4,
-    risk: 3,
-    lpSymbol: 'STONKY-WBTC',
+    risk: 5,
+    isTokenOnly: true,
+    lpSymbol: 'WMATIC-USDC',
     lpAddresses: {
       97: '',
       56: '',
-      137: '0x797eF3827Ef8bAA7B72b596E126FD1b31003055C', // WMATIC - USDC
+      137: '0x6e7a5fafcec6bb1e78bae2a1f0b612012bf14827', // 
     },
-    tokenSymbol: 'STONKY',
+    tokenSymbol: 'WMATIC',
     tokenAddresses: {
       97: '',
       56: '',
-      137: '0xcac723F6C79Ce761E04682009Fa87c39Ba05b75c', // STONKY
+      137: '0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270',
     },
-    quoteTokenSymbol: QuoteToken.CAKE,
-    quoteTokenAdresses: contracts.cake,
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
   },
-  // await CreatePool('0xc2132d05d31c914a87c6611c10748aeb04b58e8f', 25,4, 50400); // USDT 25% aloc, 4% fee, 14 hour harvest delay
+  // await CreatePool('0xc2132d05d31c914a87c6611c10748aeb04b58e8f', 50, 4); // USDT
   {
     pid: 5,
-    isTokenOnly: true,
     risk: 2,
+    isTokenOnly: true,
     lpSymbol: 'USDT',
     lpAddresses: {
       97: '',
@@ -119,54 +123,32 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
     tokenDecimals: 18,
   },
-  // await CreatePool('0x2791bca1f2de4661ed88a30c99a7a9449aa84174', 25,4, 50400); // USDC  25% aloc, 4% fee, 14 hour harvest delay
+  // await CreatePool('0xa3Fa99A148fA48D14Ed51d610c367C61876997F1', 50, 4); // MiMatic
   {
     pid: 6,
+    risk: 5,
     isTokenOnly: true,
-    risk: 2,
-    lpSymbol: 'USDC',
+    lpSymbol: 'MIMATIC-USDC',
     lpAddresses: {
       97: '',
       56: '',
-      137: '0x2cf7252e74036d1da831d11089d326296e64a728', // USDC - USDC
+      137: '0x160532d2536175d65c03b97b0630a9802c274dad', // 
     },
-    tokenSymbol: 'USDC',
+    tokenSymbol: 'MIMATIC',
     tokenAddresses: {
       97: '',
       56: '',
-      137: '0x2791bca1f2de4661ed88a30c99a7a9449aa84174', // USDC
+      137: '0xa3Fa99A148fA48D14Ed51d610c367C61876997F1',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
-    tokenDecimals: 18,
   },
-  // await CreatePool('0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270', 25,4, 50400); // Wmatic 25% aloc, 4% fee, 14 hour harvest delay
+  // await CreatePool('0xf6a637525402643b0654a54bead2cb9a83c8b498', 50, 4); // WBTC
   {
     pid: 7,
     isTokenOnly: true,
-    risk: 1,
-    lpSymbol: 'WMATIC',
-    lpAddresses: {
-      97: '',
-      56: '',  
-      137: '0x6e7a5fafcec6bb1e78bae2a1f0b612012bf14827', // WMATIC - USDC
-    },
-    tokenSymbol: 'WMATIC',
-    tokenAddresses: {
-      97: '',
-      56: '',
-      137: '0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270', // WMATIC
-    },
-    quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
-    tokenDecimals: 18,
-  },
-  // await CreatePool('0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6', 25,4, 50400); // WBTC 25% aloc, 4% fee, 14 hour harvest delay
-  {
-    pid: 8,
-    isTokenOnly: true,
     risk: 2,
-    lpSymbol: 'WBTC',
+    lpSymbol: 'WBTC-USDC',
     lpAddresses: {
       97: '',
       56: '',
@@ -182,54 +164,11 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
     tokenDecimals: 18,
   },
-  // await CreatePool('0x7ceb23fd6bc0add59e62ac25578270cff1b9f619', 25,4, 50400); // WETH 25% aloc, 4% fee, 14 hour harvest delay
+  // await CreatePool('0x831753dd7087cac61ab5644b308642cc1c33dc13', 50, 4); // Quick
   {
-    pid: 9,
-    isTokenOnly: true,
+    pid: 8,
     risk: 3,
-    lpSymbol: 'WETH',
-    lpAddresses: {
-      97: '',
-      56: '',
-      137: '0x853ee4b2a13f8a742d64c8f088be7ba2131f670d', // ETH - USDC
-    },
-    tokenSymbol: 'WETH',
-    tokenAddresses: {
-      97: '',
-      56: '',
-      137: '0x7ceb23fd6bc0add59e62ac25578270cff1b9f619', // ETH
-    },
-    quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
-    tokenDecimals: 18,
-  }, 
-  // await CreatePool('0x8a953cfe442c5e8855cc6c61b1293fa648bae472', 50, 4, 25200) // Polydoge
-  {
-    pid: 10,
-    isTokenOnly: true,
-    risk: 3,
-    lpSymbol: 'POLYDOGE',
-    lpAddresses: {
-      97: '',
-      56: '',
-      137: '0x7b3e67e63906d8576466c2f48158a30be0a9e36c', // Polydoge - USDC
-    },
-    tokenSymbol: 'PolyDoge',
-    tokenAddresses: {
-      97: '',
-      56: '',
-      137: '0x8a953cfe442c5e8855cc6c61b1293fa648bae472', // Polydoge
-    },
-    quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
-    tokenDecimals: 18,
-  }, 
-  // await CreatePool('0x831753dd7087cac61ab5644b308642cc1c33dc13', 50, 4, 25200); // Quick
-  {
-    pid: 11,
-    isTokenOnly: true,
-    risk: 3,
-    lpSymbol: 'QUICK',
+    lpSymbol: 'QUICK-USDC',
     lpAddresses: {
       97: '',
       56: '',
@@ -245,12 +184,12 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
     tokenDecimals: 18,
   }, 
-  // await CreatePool('0x8f3cf7ad23cd3cadbd9735aff958023239c6a063', 50, 4, 25200); // Dai
+  // await CreatePool('0x8f3cf7ad23cd3cadbd9735aff958023239c6a063', 50, 4); // Dai
   {
-    pid: 12,
+    pid: 9,
     isTokenOnly: true,
     risk: 3,
-    lpSymbol: 'DAI',
+    lpSymbol: 'DAI-USDC',
     lpAddresses: {
       97: '',
       56: '',
@@ -266,27 +205,147 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
     tokenDecimals: 18,
   }, 
-  // await CreatePool('0x94c7d657f1c8be06a4dc009d2d475bb559d858cb', 50, 4, 25200); // SGaj
+  // await CreatePool('0xc3fdbadc7c795ef1d6ba111e06ff8f16a20ea539', 50, 4); // Addy
   {
-    pid: 13,
+    pid: 10,
+    risk: 5,
     isTokenOnly: true,
-    risk: 3,
-    lpSymbol: 'SGAJ',
+    lpSymbol: 'ADDY-USDC',
     lpAddresses: {
       97: '',
       56: '',
-      137: '0x7116b32dab15c8f3806d39f9623fc56dcdf33d68', // SGAJ - USDC
+      137: '0xb674ec53adc1d72a2a25d2b5109a766ce6ad1083', // 
     },
-    tokenSymbol: 'SGAJ',
+    tokenSymbol: 'ADDY',
     tokenAddresses: {
       97: '',
       56: '',
-      137: '0x94c7d657f1c8be06a4dc009d2d475bb559d858cb', // SGAJ
+      137: '0xc3fdbadc7c795ef1d6ba111e06ff8f16a20ea539',
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
+  },
+  // await CreatePool('0x4A81f8796e0c6Ad4877A51C86693B0dE8093F2ef', 50, 5); // ICE
+  {
+    pid: 11,
+    risk: 5,
+    isTokenOnly: true,
+    lpSymbol: 'ICE-USDC',
+    lpAddresses: {
+      97: '',
+      56: '',
+      137: '0x34832d9ac4127a232c1919d840f7aae0fcb7315b', // 
+    },
+    tokenSymbol: 'ICE',
+    tokenAddresses: {
+      97: '',
+      56: '',
+      137: '0x4A81f8796e0c6Ad4877A51C86693B0dE8093F2ef',
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
+  },
+  // await CreatePool('0x853ee4b2a13f8a742d64c8f088be7ba2131f670d', 100, 4); // WETH-USDC
+  {
+    pid: 12,
+    risk: 5,
+    isTokenOnly: false,
+    lpSymbol: 'WETH-USDC',
+    lpAddresses: {
+      97: '',
+      56: '',
+      137: '0x853ee4b2a13f8a742d64c8f088be7ba2131f670d', // 
+    },
+    tokenSymbol: 'WETH',
+    tokenAddresses: {
+      97: '',
+      56: '',
+      137: '0x7ceb23fd6bc0add59e62ac25578270cff1b9f619',
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
+  },
+  // await CreatePool('0xadbf1854e5883eb8aa7baf50705338739e558e5b', 100, 4); // WETH-WMatic
+  {
+    pid: 13,
+    risk: 5,
+    isTokenOnly: false,
+    lpSymbol: 'WETH-WMATIC',
+    lpAddresses: {
+      97: '',
+      56: '',
+      137: '0xadbf1854e5883eb8aa7baf50705338739e558e5b', // 
+    },
+    tokenSymbol: 'WETH',
+    tokenAddresses: {
+      97: '',
+      56: '',
+      137: '0x7ceb23fd6bc0add59e62ac25578270cff1b9f619',
+    },
+    quoteTokenSymbol: QuoteToken.WMATIC, // @HACK this should be wmatic
+    quoteTokenAdresses: contracts.wbnb,
+  },
+  // await CreatePool('0x2cf7252e74036d1da831d11089d326296e64a728', 100, 4); // USDT-USDC
+  {
+    pid: 14,
+    risk: 2,
+    isTokenOnly: false,
+    lpSymbol: 'USDT-USDC',
+    lpAddresses: {
+      97: '',
+      56: '',
+      137: '0x2cf7252e74036d1da831d11089d326296e64a728', // USDT - USDC
+    },
+    tokenSymbol: 'USDT',
+    tokenAddresses: {
+      97: '',
+      56: '',
+      137: '0xc2132d05d31c914a87c6611c10748aeb04b58e8f', // USDT
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
     tokenDecimals: 18,
-  }, 
+  },
+  // await CreatePool('0x160532d2536175d65c03b97b0630a9802c274dad', 100, 4); // miMatic-USDC
+  {
+    pid: 15,
+    risk: 5,
+    isTokenOnly: false,
+    lpSymbol: 'MIMATIC-USDC',
+    lpAddresses: {
+      97: '',
+      56: '',
+      137: '0x160532d2536175d65c03b97b0630a9802c274dad', // 
+    },
+    tokenSymbol: 'MIMATIC',
+    tokenAddresses: {
+      97: '',
+      56: '',
+      137: '0xa3Fa99A148fA48D14Ed51d610c367C61876997F1',
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
+  },
+  // await CreatePool('0x6e7a5fafcec6bb1e78bae2a1f0b612012bf14827', 100, 4); // wmatic-usdc
+  {
+    pid: 16,
+    risk: 5,
+    isTokenOnly: false,
+    lpSymbol: 'WMATIC-USDC',
+    lpAddresses: {
+      97: '',
+      56: '',
+      137: '0x6e7a5fafcec6bb1e78bae2a1f0b612012bf14827', // 
+    },
+    tokenSymbol: 'WMATIC',
+    tokenAddresses: {
+      97: '',
+      56: '',
+      137: '0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270',
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
+  }
 ]
 
 export default farms

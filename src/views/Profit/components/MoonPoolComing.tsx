@@ -40,7 +40,7 @@ const MoonPoolComing: React.FC = () => {
         <CardTitle>Moon Pool</CardTitle>
         <Image src="/images/tokens/STONKMOON.png" width={64} height={64} alt="Dividends" />
         <br />
-        <Label>Stake STONKY to get early access to STONKMOON</Label>
+        <Label>Stake CORN to get early access to STONKMOON</Label>
         <Button variant="subtle" fullWidth mb="16px">
           <span style={{fontSize: 'large'}}>$10,000+</span> of STONKMOON
         </Button>

@@ -40,7 +40,7 @@ const Coming: React.FC = () => {
         <CardTitle>Matic Dividends</CardTitle>
         <Image src="/images/tokens/matic.png" width={64} height={64} alt="Dividends" />
         <br />
-        <Label>Distributes fee income back to STONKY holders</Label>
+        <Label>Distributes fee income back to CORN holders</Label>
         <Button variant="subtle" fullWidth mb="16px">
           <span style={{fontSize: 'x-large'}}>$10,000+</span> of Matic Dividends
         </Button>

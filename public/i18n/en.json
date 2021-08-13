@@ -75,7 +75,7 @@
     {
       "data": {
         "stringId": 304,
-        "text": "Total StonkY burned since launch"
+        "text": "Total Corn burned since launch"
       }
     },
     {
@@ -123,13 +123,13 @@
     {
       "data": {
         "stringId": 320,
-        "text": "Stake LP tokens to earn StonkY"
+        "text": "Stake LP tokens to earn Corn"
       }
     },
     {
       "data": {
         "stringId": 322,
-        "text": "Stake StonkY, get SYRUP."
+        "text": "Stake Corn, get SYRUP."
       }
     },
     {
@@ -153,7 +153,7 @@
     {
       "data": {
         "stringId": 334,
-        "text": "Every time you stake and unstake StonkY tokens, the contract will automatically harvest StonkY rewards for you!"
+        "text": "Every time you stake and unstake Corn tokens, the contract will automatically harvest Corn rewards for you!"
       }
     },
     {
@@ -219,7 +219,7 @@
     {
       "data": {
         "stringId": 358,
-        "text": "StonkY price"
+        "text": "Corn price"
       }
     },
     {
@@ -243,7 +243,7 @@
     {
       "data": {
         "stringId": 380,
-        "text": "1 StonkY = 1 SYRUP"
+        "text": "1 Corn = 1 SYRUP"
       }
     },
     {
@@ -291,7 +291,7 @@
     {
       "data": {
         "stringId": 400,
-        "text": "SYRUP holders proportionally split 25% of StonkY block emissions each day (10 StonkY per block), Rewards are distributed each block."
+        "text": "SYRUP holders proportionally split 25% of Corn block emissions each day (10 Corn per block), Rewards are distributed each block."
       }
     },
     {
@@ -357,13 +357,13 @@
     {
       "data": {
         "stringId": 424,
-        "text": "%num% StonkY"
+        "text": "%num% Corn"
       }
     },
     {
       "data": {
         "stringId": 426,
-        "text": "Spend StonkY to buy tickets, contributing to the lottery pot. Ticket purchases end approx. 30 minutes before lottery. Win prizes if 2, 3, or 4 of your ticket numbers match the winning numbers and their positions! Good luck!"
+        "text": "Spend Corn to buy tickets, contributing to the lottery pot. Ticket purchases end approx. 30 minutes before lottery. Win prizes if 2, 3, or 4 of your ticket numbers match the winning numbers and their positions! Good luck!"
       }
     },
     {
@@ -441,19 +441,19 @@
     {
       "data": {
         "stringId": 454,
-        "text": "%num% StonkY Available"
+        "text": "%num% Corn Available"
       }
     },
     {
       "data": {
         "stringId": 456,
-        "text": "Your amount must be a multiple of 10 StonkY"
+        "text": "Your amount must be a multiple of 10 Corn"
       }
     },
     {
       "data": {
         "stringId": 458,
-        "text": "1 Ticket = 10 StonkY"
+        "text": "1 Ticket = 10 Corn"
       }
     },
     {
@@ -501,7 +501,7 @@
     {
       "data": {
         "stringId": 478,
-        "text": "Ticket purchases are final. Your StonkY cannot be returned to you after buying tickets."
+        "text": "Ticket purchases are final. Your Corn cannot be returned to you after buying tickets."
       }
     },
     {
@@ -513,7 +513,7 @@
     {
       "data": {
         "stringId": 482,
-        "text": "StonkY prizes to be claimed"
+        "text": "Corn prizes to be claimed"
       }
     },
     {
@@ -549,13 +549,13 @@
     {
       "data": {
         "stringId": 494,
-        "text": "Approve StonkY"
+        "text": "Approve Corn"
       }
     },
     {
       "data": {
         "stringId": 496,
-        "text": "SYRUP holders proportionally split 40% of StonkY block emissions each day (10 StonkY per block), Rewards are distributed each block."
+        "text": "SYRUP holders proportionally split 40% of Corn block emissions each day (10 Corn per block), Rewards are distributed each block."
       }
     },
     {
@@ -573,19 +573,19 @@
     {
       "data": {
         "stringId": 504,
-        "text": "You\u2019ll pay for the new tokens using StonkY-BNB LP tokens, which means you need to stake equal amounts of StonkY and BNB in a liquidity pool to take part."
+        "text": "You\u2019ll pay for the new tokens using Corn-BNB LP tokens, which means you need to stake equal amounts of Corn and BNB in a liquidity pool to take part."
       }
     },
     {
       "data": {
         "stringId": 506,
-        "text": "Get StonkY-BNB LP >"
+        "text": "Get Corn-BNB LP >"
       }
     },
     {
       "data": {
         "stringId": 508,
-        "text": "The project gets the BNB, Goose Finance burns the StonkY."
+        "text": "The project gets the BNB, Goose Finance burns the Corn."
       }
     },
     {
@@ -651,7 +651,7 @@
     {
       "data": {
         "stringId": 534,
-        "text": "StonkY Stats"
+        "text": "Corn Stats"
       }
     },
     {
@@ -669,7 +669,7 @@
     {
       "data": {
         "stringId": 540,
-        "text": "New StonkY\/block"
+        "text": "New Corn\/block"
       }
     },
     {
@@ -681,19 +681,19 @@
     {
       "data": {
         "stringId": 544,
-        "text": "StonkY to Harvest"
+        "text": "Corn to Harvest"
       }
     },
     {
       "data": {
         "stringId": 546,
-        "text": "StonkY in Wallet"
+        "text": "Corn in Wallet"
       }
     },
     {
       "data": {
         "stringId": 548,
-        "text": "Collecting StonkY"
+        "text": "Collecting Corn"
       }
     },
     {
@@ -705,7 +705,7 @@
     {
       "data": {
         "stringId": 552,
-        "text": "StonkY to Collect"
+        "text": "Corn to Collect"
       }
     },
     {
@@ -771,7 +771,7 @@
     {
       "data": {
         "stringId": 580,
-        "text": "Stake StonkYs to earn new tokens."
+        "text": "Stake Corns to earn new tokens."
       }
     },
     {
@@ -789,7 +789,7 @@
     {
       "data": {
         "stringId": 586,
-        "text": "StonkY to burn (USD)"
+        "text": "Corn to burn (USD)"
       }
     },
     {
@@ -801,7 +801,7 @@
     {
       "data": {
         "stringId": 590,
-        "text": "\u2b50\ufe0f Every time you stake and unstake LP tokens, the contract will automatically harvest StonkY rewards for you!"
+        "text": "\u2b50\ufe0f Every time you stake and unstake LP tokens, the contract will automatically harvest Corn rewards for you!"
       }
     },
     {
@@ -819,13 +819,13 @@
     {
       "data": {
         "stringId": 596,
-        "text": "Buy StonkY and BNB tokens"
+        "text": "Buy Corn and BNB tokens"
       }
     },
     {
       "data": {
         "stringId": 598,
-        "text": "Get StonkY-BNB LP tokens by adding StonkY and BNB liquidity"
+        "text": "Get Corn-BNB LP tokens by adding Corn and BNB liquidity"
       }
     },
     {
@@ -837,7 +837,7 @@
     {
       "data": {
         "stringId": 602,
-        "text": "While the sale is live, commit your StonkY-LP tokens to buy the IFO tokens"
+        "text": "While the sale is live, commit your Corn-LP tokens to buy the IFO tokens"
       }
     },
     {
@@ -873,7 +873,7 @@
     {
       "data": {
         "stringId": 614,
-        "text": "Trade in for StonkY, or keep for your collection!"
+        "text": "Trade in for Corn, or keep for your collection!"
       }
     },
     {
@@ -915,7 +915,7 @@
     {
       "data": {
         "stringId": 628,
-        "text": "When you trade in this NFT to receive StonkY, you will lose access to it forever!"
+        "text": "When you trade in this NFT to receive Corn, you will lose access to it forever!"
       }
     },
     {
@@ -945,7 +945,7 @@
     {
       "data": {
         "stringId": 638,
-        "text": "Winners can trade in their NFTs for a StonkY value until the expiry date written below. If you don't trade in your NFT by then, don\u2019t worry: you\u2019ll still keep it in your wallet!"
+        "text": "Winners can trade in their NFTs for a Corn value until the expiry date written below. If you don't trade in your NFT by then, don\u2019t worry: you\u2019ll still keep it in your wallet!"
       }
     },
     {
@@ -987,7 +987,7 @@
     {
       "data": {
         "stringId": 654,
-        "text": "Trade in for StonkY"
+        "text": "Trade in for Corn"
       }
     },
     {
@@ -1113,7 +1113,7 @@
     {
       "data": {
         "stringId": 696,
-        "text": "Stake LP tokens to earn StonkY"
+        "text": "Stake LP tokens to earn Corn"
       }
     },
     {
@@ -1155,13 +1155,13 @@
     {
       "data": {
         "stringId": 708,
-        "text": "The StonkY Lottery"
+        "text": "The Corn Lottery"
       }
     },
     {
       "data": {
         "stringId": 710,
-        "text": "Buy tickets with StonkY"
+        "text": "Buy tickets with Corn"
       }
     },
     {
@@ -1227,7 +1227,7 @@
     {
       "data": {
         "stringId": 10002,
-        "text": "Stake tokens to earn StonkY"
+        "text": "Stake tokens to earn Corn"
       }
     },
     {

@@ -7,9 +7,9 @@ const config: MenuEntry[] = [
     href: '/',
   },
   {
-    label: 'Buy StonkY',
+    label: 'Buy Corn',
     icon: 'TradeIcon',
-    href: 'https://quickswap.exchange/#/swap?outputCurrency=0xcac723F6C79Ce761E04682009Fa87c39Ba05b75c',
+    href: 'https://quickswap.exchange/#/swap?outputCurrency=0xAed7fEEf34a836A5755f1C0C6CCD9968Df2d422a',
   },
   {
     label: 'Stake Liquidity',
@@ -51,12 +51,8 @@ const config: MenuEntry[] = [
     icon: 'InfoIcon',
     items: [
       {
-        label: 'StonkY Chart',
+        label: 'Corn Chart',
         href: 'https://app.polychart.io/explorer/polygon/0x21401c19cbe557f1265401bda65bc523ce509db2'
-      },
-      {
-        label: 'StonkX Chart',
-        href: 'https://app.polychart.io/explorer/polygon/0xc293225ba90c545357761af2a09e71504275cee2'
       },
       {
         label: 'Github',
@@ -75,7 +71,7 @@ const config: MenuEntry[] = [
   {
     label: 'Rug Doc Security Review',
     icon: 'AuditIcon',
-    href: 'https://rugdoc.io/project/stonky-farm/',
+    href: 'https://rugdoc.io/project/corn-farm/',
   }, 
   {
     label: 'Previous Farms',

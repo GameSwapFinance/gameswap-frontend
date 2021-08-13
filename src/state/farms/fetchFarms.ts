@@ -125,7 +125,7 @@ const fetchFarms = async () => {
       if (farmConfig.isTokenOnly) {
         tokenAmount = new BigNumber(lpTokenBalanceMC).div(new BigNumber(10).pow(tokenDecimals))
         // if (farmConfig.tokenSymbol === QuoteToken.BUSD && farmConfig.quoteTokenSymbol === QuoteToken.BUSD) {
-        if ((farmConfig.tokenSymbol === QuoteToken.STONKY || farmConfig.tokenSymbol === QuoteToken.WMATIC || farmConfig.tokenSymbol === QuoteToken.QUICK || farmConfig.tokenSymbol === QuoteToken.WETH || farmConfig.tokenSymbol === QuoteToken.FISH || farmConfig.tokenSymbol === QuoteToken.IRON || farmConfig.tokenSymbol === QuoteToken.POLYDOGE || farmConfig.tokenSymbol === QuoteToken.DAI || farmConfig.tokenSymbol === QuoteToken.SGAJ) && farmConfig.quoteTokenSymbol === QuoteToken.BUSD) {
+        if ((farmConfig.tokenSymbol === QuoteToken.CORN || farmConfig.tokenSymbol === QuoteToken.WMATIC || farmConfig.tokenSymbol === QuoteToken.QUICK || farmConfig.tokenSymbol === QuoteToken.WETH || farmConfig.tokenSymbol === QuoteToken.FISH || farmConfig.tokenSymbol === QuoteToken.IRON || farmConfig.tokenSymbol === QuoteToken.POLYDOGE || farmConfig.tokenSymbol === QuoteToken.DAI || farmConfig.tokenSymbol === QuoteToken.SGAJ) && farmConfig.quoteTokenSymbol === QuoteToken.BUSD) {
           tokenPriceVsQuote = new BigNumber(quoteTokenBlanceLP).div(new BigNumber(tokenBalanceLP)).times(new BigNumber(10).pow(12))
           // console.log(`${farmConfig.tokenSymbol} quoteTokenBalanceLP: ${quoteTokenBlanceLP} / tokenBalanceLP: ${tokenBalanceLP} = ${tokenPriceVsQuote}`)
         }
@@ -173,7 +173,7 @@ const fetchFarms = async () => {
         },
         {
           address: getMasterChefAddress(),
-          name: 'stonkPerBlock',
+          name: 'eggPerBlock',
         },
       ])
 
