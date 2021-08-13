@@ -113,16 +113,17 @@ export const useTotalValue = (): BigNumber => {
   }
 
   // Calculate value for pools
-  /* const pools = useSelector((state: State) => state.pools.data)
+  const pools = useSelector((state: State) => state.pools.data)
   for (let i = 0; i < pools.length; i++) {
     const pool = pools[i]
     const totalStakedInPool = new BigNumber(pool.totalStaked)
+    console.log(`${pool.sousId} | ${totalStakedInPool.toNumber()}`)
     // @HACK DIV POOL need to define these each time a pool is added
-    if (pool.sousId === 2) {
-      value = value.plus(totalStakedInPool.div(new BigNumber(10).pow(18)).multipliedBy(cakePrice))
+    if (pool.sousId === 2 || pool.sousId === 1) {
+      value = value.plus(totalStakedInPool)
     } else if (pool.sousId === 3) {
       value = value.plus(totalStakedInPool.div(new BigNumber(10).pow(18)).multipliedBy(cakePrice))
     }
-  } */
+  } 
   return value
 }
