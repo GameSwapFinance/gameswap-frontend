@@ -37,11 +37,6 @@ const config: MenuEntry[] = [
   //   href: '/nft',
   // },
   {
-    label: 'Road Map',
-    icon: 'RoadmapIcon',
-    href: 'https://gameswapfinance.gitbook.io/gameswap/roadmap',
-  },
-  {
     label: 'Info',
     icon: 'InfoIcon',
     items: [
