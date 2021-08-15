@@ -106,7 +106,7 @@ const Farm: React.FC = () => {
               <PoolCard key={pool.sousId} pool={pool} />
             ))}
           </>
-          <MoonPoolComing/>
+          <Coming/>
         </Route>
         <Route path={`${path}/history`}>
           {orderBy(finishedPools, ['sortOrder']).map((pool) => (

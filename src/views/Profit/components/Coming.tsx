@@ -42,7 +42,7 @@ const Coming: React.FC = () => {
         <br />
         <Label>Distributes fee income back to CORN holders</Label>
         <Button variant="subtle" fullWidth mb="16px">
-          <span style={{fontSize: 'x-large'}}>$10,000+</span> of Matic Dividends
+          <span style={{fontSize: 'x-large'}}>$5,000+</span> of Matic Dividends
         </Button>
       </div>
       <Footer>

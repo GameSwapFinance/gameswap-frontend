@@ -59,9 +59,9 @@ const config: MenuEntry[] = [
     ],
   },
   {
-    label: 'Rug Doc Security Review (Coming Soon)',
+    label: 'Rug Doc Security Review',
     icon: 'AuditIcon',
-    href: 'https://rugdoc.io/project/corn-farm/',
+    href: 'https://rugdoc.io/project/poly-unicorn/',
   }, 
 ]
 
