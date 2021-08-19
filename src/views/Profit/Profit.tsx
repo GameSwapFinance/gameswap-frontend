@@ -63,7 +63,7 @@ const Farm: React.FC = () => {
     let totalStakingTokenInPool = stakingTokenPriceInBNB.times(getBalanceNumber(pool.totalStaked))
     
 
-    if(pool.sousId === 1)
+    if(pool.sousId === 0)
     {
       totalRewardPricePerYear = new BigNumber( 350  / 3 * 365).multipliedBy(cakePriceUSD) // @HACK hard code value for now rewardTokenPriceInBNB.times(pool.tokenPerBlock).times(BLOCKS_PER_YEAR)
       totalStakingTokenInPool = new BigNumber(getBalanceNumber(pool.totalStaked))
