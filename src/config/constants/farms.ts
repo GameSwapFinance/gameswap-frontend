@@ -124,7 +124,7 @@ const farms: FarmConfig[] = [
     tokenDecimals: 18,
   },
   // await CreatePool('0xa3Fa99A148fA48D14Ed51d610c367C61876997F1', 50, 4); // MiMatic
-  {
+  /* {
     pid: 6,
     risk: 5,
     isTokenOnly: true,
@@ -142,7 +142,7 @@ const farms: FarmConfig[] = [
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
-  },
+  }, */
   // await CreatePool('0xf6a637525402643b0654a54bead2cb9a83c8b498', 50, 4); // WBTC
   {
     pid: 7,
@@ -206,7 +206,7 @@ const farms: FarmConfig[] = [
     tokenDecimals: 18,
   }, 
   // await CreatePool('0xc3fdbadc7c795ef1d6ba111e06ff8f16a20ea539', 50, 4); // Addy
-  {
+  /* {
     pid: 10,
     risk: 5,
     isTokenOnly: true,
@@ -244,7 +244,7 @@ const farms: FarmConfig[] = [
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
-  },
+  }, */
   // await CreatePool('0x853ee4b2a13f8a742d64c8f088be7ba2131f670d', 100, 4); // WETH-USDC
   {
     pid: 12,
