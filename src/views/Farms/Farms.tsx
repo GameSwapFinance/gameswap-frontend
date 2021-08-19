@@ -69,9 +69,9 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
         if (farm.quoteTokenSymbol === QuoteToken.BNB) {
           totalValue = totalValue.times(bnbPrice)
         }
-        else if(farm.pid === 2 || farm.pid === 3 || farm.pid === 4){ // @HACK temp fix corn lp APR
-          totalValue = totalValue.times(cakePrice);
-        }
+        // else if(farm.pid === 2 || farm.pid === 3 || farm.pid === 4){ // @HACK temp fix corn lp APR
+        //  totalValue = totalValue.times(cakePrice);
+        // }
         // console.log(`pid|${farm.pid}|totalValue|${totalValue}|cakeRewards|${cakeRewardPerYear}|lptotalinquotetoken|${farm.lpTotalInQuoteToken}`);
         if (totalValue.comparedTo(0) > 0) {
           apy = apy.div(totalValue)
