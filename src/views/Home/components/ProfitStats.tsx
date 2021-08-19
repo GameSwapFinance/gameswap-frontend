@@ -28,7 +28,7 @@ const ProfitStats = () => {
   const burnedBalance = useBurnedBalance(getCakeAddress())
   const farms = useFarms()
   const block = useBlock()
-  const startBlock = 18006684
+  const startBlock = 18168373
 
   let eggPerBlock = 0
   if (farms && farms[0] && farms[0].eggPerBlock) {
@@ -55,10 +55,10 @@ const ProfitStats = () => {
 
   let message = ""
   if (block < startBlock){
-    message = `Corn farming begins in ${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds`;
+    message = `Matic Divident Pool Starts in ${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds`;
   }
   else if (block < startBlock + (12 * 60 * 60 / 2.25)){
-    message = "Corn farming is LIVE!";
+    message = "Matic Dividend Pool is LIVE!";
   }
  
   return (

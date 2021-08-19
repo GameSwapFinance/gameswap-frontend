@@ -99,19 +99,15 @@ const Farm: React.FC = () => {
 
   return (
     <Page>
-      <Hero>
         <div>
-          <Heading as="h1" size="xxl" mb="16px">
-            {TranslateString(282, 'Flash Pools')}
-          </Heading>
-          <ul>
-            <li>Stake non-native tokens to earn Stonk Shares.</li>
-            <li>New pool added every two days.</li>
-            <li>Each pool will last for seven days.</li>
-          </ul>
+        <Heading as="h1" size="lg" color="primary" mb="50px" style={{ textAlign: 'center' }}>
+        Stake CORN to Earn Divident Payouts
+      </Heading>
+      <Heading as="h2" color="secondary" mb="50px" style={{ textAlign: 'center' }}>
+        {TranslateString(10000, 'Dividends paid out in Matic from Deposit Fees')}
+      </Heading>
         </div>
-        <img src="/images/syrup.png" alt="SYRUP POOL icon" width={410} height={191} />
-      </Hero>
+      <br />
       <br />
 
       <PoolTabButtons />
@@ -123,7 +119,6 @@ const Farm: React.FC = () => {
               <PoolCard key={pool.sousId} pool={pool} />
             ))}
           </>
-          <Coming/>
         </Route>
         <Route path={`${path}/history`}>
           {orderBy(finishedPools, ['sortOrder']).map((pool) => (
