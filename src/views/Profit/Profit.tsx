@@ -28,6 +28,7 @@ const Farm: React.FC = () => {
   const farms = useFarms()
   const pools = usePools(account)
   const bnbPriceUSD = usePriceBnbBusd()
+  const cakePriceUSD = usePriceCakeBusd()
   const block = useBlock()
 
   const priceToBnb = (tokenName: string, tokenPrice: BigNumber, quoteToken: QuoteToken): BigNumber => {
@@ -59,9 +60,23 @@ const Farm: React.FC = () => {
     const totalBlocksPerYear = 365 * 24 * 60 * 60 / 2.1;
     const tokensPerYear = totalBlocksPerYear * parseFloat(pool.tokenPerBlock);
 
-    if(pool.sousId === 2)
+    let totalStakingTokenInPool = stakingTokenPriceInBNB.times(getBalanceNumber(pool.totalStaked))
+    
+
+    if(pool.sousId === 1)
     {
-      totalRewardPricePerYear = new BigNumber( 3570 * 1.3 / 3 * 365) // @HACK hard code value for now rewardTokenPriceInBNB.times(pool.tokenPerBlock).times(BLOCKS_PER_YEAR)
+      totalRewardPricePerYear = new BigNumber( 350  / 3 * 365).multipliedBy(cakePriceUSD) // @HACK hard code value for now rewardTokenPriceInBNB.times(pool.tokenPerBlock).times(BLOCKS_PER_YEAR)
+      totalStakingTokenInPool = new BigNumber(getBalanceNumber(pool.totalStaked))
+      // console.log(`TotalStaked: ${getBalanceNumber(pool.totalStaked)}`)
+      // console.log(`bnbPrice: ${bnbPriceUSD}`)
+    }
+    else if (pool.sousId === 2){
+      // pool.totalStaked = pool.totalStaked.multipliedBy(new BigNumber(10).pow(12))
+      totalRewardPricePerYear = new BigNumber( 350  / 3 * 365).multipliedBy(cakePriceUSD) // @HACK hard code value for now rewardTokenPriceInBNB.times(pool.tokenPerBlock).times(BLOCKS_PER_YEAR)
+      // console.log(`Token ${pool.tokenName} | TotalStaking ${pool.totalStaked}`)
+      totalStakingTokenInPool = new BigNumber(getBalanceNumber(pool.totalStaked)).multipliedBy(new BigNumber(10).pow(12))
+      // console.log(`TotalStaked: ${totalStakingTokenInPool.toNumber()}`)
+      // console.log(`bnbPrice: ${bnbPriceUSD}`)
     }
     else if (pool.sousId === 3){
       totalRewardPricePerYear = new BigNumber( 50 * 200 / 3 * 365) // @HACK hard code value for now rewardTokenPriceInBNB.times(pool.tokenPerBlock).times(BLOCKS_PER_YEAR)
@@ -70,9 +85,6 @@ const Farm: React.FC = () => {
       totalRewardPricePerYear = new BigNumber(tokensPerYear).multipliedBy(bnbPriceUSD);
     }
     
-    
-
-    const totalStakingTokenInPool = stakingTokenPriceInBNB.times(getBalanceNumber(pool.totalStaked))
     const apy =  totalRewardPricePerYear.div(totalStakingTokenInPool).times(100)
     // console.log(`${pool.sousId} ${totalRewardPricePerYear.toNumber()} / ${totalStakingTokenInPool.toNumber()} * 100`);
     
@@ -87,14 +99,19 @@ const Farm: React.FC = () => {
 
   return (
     <Page>
+      <Hero>
         <div>
-        <Heading as="h1" size="lg" color="primary" mb="50px" style={{ textAlign: 'center' }}>
-        Stake CORN to Earn Divident Payouts
-      </Heading>
-      <Heading as="h2" color="secondary" mb="50px" style={{ textAlign: 'center' }}>
-        {TranslateString(10000, 'Dividends paid out in Matic from Deposit Fees')}
-      </Heading>
+          <Heading as="h1" size="xxl" mb="16px">
+            {TranslateString(282, 'Flash Pools')}
+          </Heading>
+          <ul>
+            <li>Stake non-native tokens to earn Stonk Shares.</li>
+            <li>New pool added every two days.</li>
+            <li>Each pool will last for seven days.</li>
+          </ul>
         </div>
+        <img src="/images/syrup.png" alt="SYRUP POOL icon" width={410} height={191} />
+      </Hero>
       <br />
 
       <PoolTabButtons />
